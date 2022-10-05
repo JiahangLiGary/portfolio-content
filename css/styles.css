@@ -1,0 +1,256 @@
+* {
+  padding: none;
+  margin: none;
+  font-family: 'Times New Roman';
+}
+
+a{
+  text-decoration: none;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  background-color: black;
+  text-align: center;
+}
+footer p{
+  color: aliceblue;
+  margin-top: 0.5vh;
+}
+
+header {
+  height: 8vh;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background: linear-gradient(90deg, #d67de2, #6ec8e4); 
+  
+}
+
+
+nav a {
+  text-decoration: none;
+  padding-top: 2.5vh;
+  padding-bottom: 2vh;
+  font-size: 18px;
+  font-family: 'Times New Roman';
+  color: white;
+}
+
+
+nav a:hover{
+  background-color:burlywood;
+}
+
+
+
+div.main_page{
+  margin-top: 10vh;
+  display: flex;
+}
+
+div.main_page div{
+  width: 35vw;
+  margin-left: 10vw;
+}
+div.main_page h1 {
+  font-weight: bold;
+  font-size: 45px;
+  margin:2vh 0 3vh 0;
+}
+div.main_page p{
+  line-height: 150%;
+}
+img.main_page{
+  width: 40vw;
+  height:60vh;
+  margin: 0 0 0 4rem;
+  border: 0.5px rgb(0, 229, 255) solid;
+  padding: 1px;
+}
+
+.target1, .target2, .target3, .target4{
+  color: red;
+  padding: auto;
+  text-decoration: underline;
+}
+/* 
+css for photos page */
+.container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;  
+}
+
+p.photos{
+  font-size: large;
+  margin:3%;
+}
+
+div.container figure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:2px;
+  margin: 0 0 2vh 2vh;
+}
+
+div.container img{
+  padding:0px;
+  margin: 0 ;
+  border: 0.05px groove blue;
+  width: 80%;
+}
+
+/* project css */
+div.project1, div.project3 {
+  display: flex;
+  margin-top: 4vh;
+}
+div.project1 img{
+  margin:0 2vw 2vh 2vw;
+  padding: 2px;
+  border: 2px;
+  width: 75vw;
+  height: 100vh;
+}
+div.project1 div{
+  margin-right: 2vw;
+  margin-top: 15vh;
+}
+div.project1 h1{
+  font-weight: bold;
+  margin-top: 3vh;
+  margin-bottom: 6vh;
+  font-size: 24px;
+}
+
+div.project2{
+  display: flex;
+  flex-direction: column;
+
+}
+
+div.project2 div.pr2_img {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+div.project2 img{
+  padding: 2px;
+  margin:1px;
+  border: 1px;
+}
+
+div.project2 h1{
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 3vh;
+  margin-bottom: 6vh;
+}
+div.project2 div.pr2_text{
+  margin-top: 3vh;
+  margin-left: 25vw;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.project3 img{
+  height:50% ;
+  width:80%;
+  padding: 2px;
+  border: 2px;
+
+}
+div.project3 div{
+  margin-right: 2vw;
+  margin-top: 15vh;
+}
+div.project3 h1{
+  font-weight: bold;
+  margin-top: 3vh;
+  margin-bottom: 6vh;
+  font-size: 24px;
+  margin:0 0 2vh 0;
+}
+
+/* contact css */
+
+div.contact{
+  display: flex;
+  margin-top: 3vh;
+}
+div.contact img{
+  width: 50vw;
+  margin:0 2vw 3vh 4vw ;
+  padding: 2px;
+  border: 1px red solid;
+}
+/* img hover */
+div.main_page img:hover{
+  padding: 2px;
+  margin-top: 0;
+  margin-left: 2vw;
+  border: 2px solid yellow;
+  width: 50vw;
+  height: 75vh;
+
+}
+
+div.container img:hover{
+  padding: 1px;
+  margin:2px;
+  border: 2px solid yellow;
+  width: 100%;
+}
+
+.project1 img:hover{
+  position: absolute;
+  right:10vw;
+  z-index: 1;
+  width:80vw ;
+  height: 110vh;
+  padding: auto;
+  margin: auto;
+  border: 0;
+}
+
+.project2 img:hover{
+  z-index: 1;
+  width:50vw ;
+  height: 60vh;
+  position: absolute;
+  right:25vw;
+  padding: auto;
+  margin: auto;
+  border: 0;
+}
+
+.project3 img:hover{
+  z-index: 1;
+  width:50vw ;
+  height: 50vh;
+  position: absolute;
+  right:25vw;
+  padding: auto;
+  margin: auto;
+  border: 0;
+}
+
+div.contact img:hover{
+  width: 60vw;
+  margin:0 2vw 3vh 8vw ;
+  padding: 2px;
+  border: 1px hotpink groove;
+}

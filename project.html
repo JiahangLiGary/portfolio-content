@@ -4,60 +4,71 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="css/html5reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Contact</title>
+	<link rel="icon" href="./image/favicon.ico.jpg">
+	<link rel="stylesheet" href="./css/html5reset.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<title>Project</title>
 </head>
 
 <body>
 	<header>
 		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="photos.html">Photos</a></li>
-                <li><a href="project.html">My Projects</a></li>
-                <li><a href="contact.html">Contact me</a></li>
-			</ul>
+			<a   href="./index.html">Home</a>
+			<a  href="./photos.html">Photos</a>
+			<a  class="target3" href="./project.html">Projects</a>
+			<a  href="./contact.html">Contact me</a>
+		</nav>
 	</header>
 
 	<main>
-        <img src="./image/project_ml.jpg" alt="poster for the NLP project">
-        <h1>Sentiment Analysis on Attitude Towards Winter Olympics</h1>
-        <p>Fetched recent Twitter posts related to Winter Olympics through tweepy. Hand labled posts emotions and checked our Krippendorff’s alpha value.
-           Preprocessed the hand-labeled data, used "re" removed non-related parts in the datasets, removed stop words from a stopword list. Used "Jieba" package for text segmentation.
-           Constructed Naive bayes, SVM and LSTM models by sklearn and torch. Converted each post to the desired input features by sklearn and gensim. Applied five fold cross validation in the train dataset and metrics is utilized to check the overall accuracy and F1-Macro score
-        </p>
-        <a href="https://github.com/Leestar1234/EECS-545-Sentiment-Analysis">Github repo</a>
+        <div class="project1">
+            <img src="./image/project_ml.jpg" alt="poster for the NLP project">
+            <div>
+                <h1>Sentiment Analysis on Attitude Towards Winter Olympics <a href="https://github.com/Leestar1234/EECS-545-Sentiment-Analysis">Github repo</a></h1>
+                <p>Fetched recent Twitter posts related to Winter Olympics through tweepy. Hand labled posts emotions and checked our Krippendorff’s alpha value.
+                Preprocessed the hand-labeled data, used "re" removed non-related parts in the datasets, removed stop words from a stopword list. Used "Jieba" package for text segmentation.
+                Constructed Naive bayes, SVM and LSTM models by sklearn and torch. Converted each post to the desired input features by sklearn and gensim. Applied five fold cross validation in the train dataset and metrics is utilized to check the overall accuracy and F1-Macro score
+                </p>
+             </div>
+        </div>
         <br>
         <br>
         <br>
-        <img src="./image/flask_homepage.jpg" alt="flask project graph 1" height="320" width="500">
-        <img src="./image/project_flask.jpg" alt="flask project graph 2" height="320" width="500">
-        <img src="./image/flask_detail.jpg" alt="flask project graph 3" height="320" width="500">
-        <h1>Steam games search website <a href="https://github.com/JiahangLiGary/SI507_Final">Github repo</a></h1>
-        <p>
-            Input of users will be caught through Post and Get methods and flask routes will deal with the inputs and render corresponding HTML files.
-            Utilized BeautfiulSoup 4 to get the desired information (games categories display, steam games status etc) by crawling related URLs, fetched and cached each game’s specific information. Used sqlite3 as the database and temporally stored all data into tables.
-            Fetched and cached data are organized into HTML files and SCSS are added to adjust the layout.
-        </p>
-        <br>
-        <br>
-        <br>
-        <img src="./image/React_shopping_project.jpg" alt="website shopping page" height="50%" width="80%">
-        <h1>Crwn-clothing shopping website<a href="https://github.com/JiahangLiGary/crwn-clothing">Github repo</a></h1>
-        <p>
-            Built JSX components(directory, sign-in form, cart items,etc) and utilizd react router create home,authentication, category, checkout routes. Outlet is used to preserve the navagation bar in each routes.
-            Main data are stored and retrieved in Firestore database(No-SQL). Authentication page and user documents are processed by firebase app. Adjusted layout using Sass and styled-components.
-            Constructed react-redux store and combined reducers to control the state of user, cart and categories. Created redux-saga middle ware to dispatch specific actions.
-            Built card payment section by Stripe API and Netlify functions
-        </p>
-        <a href="https://magenta-dasik-730ba8.netlify.app/">Netlify web deploy</a>
-        <p>The deployed site is not working the same as the local site, some netlify functions must be established for the google sign in and visa payment </p>
+        <div class="project2">
+            <div class="pr2_img">
+                <img src="./image/flask_homepage.jpg" alt="flask project graph 1" height="320" width="500">
+                <img src="./image/project_flask.jpg" alt="flask project graph 2" height="320" width="500">
+                <img src="./image/flask_detail.jpg" alt="flask project graph 3" height="320" width="500">
+            </div>
+            
+            <div class="pr2_text">
+                <h1>Steam games search website <a href="https://github.com/JiahangLiGary/SI507_Final">Github repo</a></h1>
+                <p>
+                    Input of users will be caught through Post and Get methods and flask routes will deal with the inputs and render corresponding HTML files.
+                    Utilized BeautfiulSoup 4 to get the desired information (games categories display, steam games status etc) by crawling related URLs, fetched and cached each game’s specific information. Used sqlite3 as the database and temporally stored all data into tables.
+                    Fetched and cached data are organized into HTML files and SCSS are added to adjust the layout.
+                </p>
+            </div>
+        </div>
+
+        <div class="project3">
+            <img src="./image/React_shopping_project.jpg" alt="website shopping page" >
+            <div>
+                <h1>Crwn-clothing shopping website <a href="https://github.com/JiahangLiGary/crwn-clothing">Github repo</a></h1>
+                <p>
+                    Built JSX components(directory, sign-in form, cart items,etc) and utilizd react router create home,authentication, category, checkout routes. Outlet is used to preserve the navagation bar in each routes.
+                    Main data are stored and retrieved in Firestore database(No-SQL). Authentication page and user documents are processed by firebase app. Adjusted layout using Sass and styled-components.
+                    Constructed react-redux store and combined reducers to control the state of user, cart and categories. Created redux-saga middle ware to dispatch specific actions.
+                    Built card payment section by Stripe API and Netlify functions
+                </p>
+            </div>
+        </div>
 	</main>
 
 	<footer>
-
+		<p>
+			Jiahang Li's website  © 2022
+		</p>
 	</footer>
 </body>
 </html>
