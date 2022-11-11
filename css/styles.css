@@ -103,7 +103,7 @@ div.form{
   background-size: cover;
 }
 
-aside.media{
+aside#media{
   margin-top: 1.5rem;
   display: flex;
   justify-content:space-around;
@@ -199,11 +199,11 @@ img.inter:hover{
     grid-row: 2 ;
    
   }
-  body.contact_body aside.media{
+  body.contact_body aside#media{
     grid-column: 2 / 6 ;
     grid-row: 4;
   }
-  body.contact_body aside.form{
+  body.contact_body aside#form{
     grid-column: 2 / 6 ;
     grid-row: 3 ;
   }
@@ -213,7 +213,7 @@ img.inter:hover{
   }
   div.contact img{
     width: 100vw;
-    height: 50vh;
+    height: 48vh;
   }
   /* css for photos page */ 
   h1.photos{
