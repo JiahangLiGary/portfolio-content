@@ -103,7 +103,7 @@ div.form{
   background-size: cover;
 }
 
-aside#media{
+div.media{
   margin-top: 1.5rem;
   display: flex;
   justify-content:space-around;
@@ -199,11 +199,11 @@ img.inter:hover{
     grid-row: 2 ;
    
   }
-  body.contact_body aside#media{
+  body.contact_body div.media{
     grid-column: 2 / 6 ;
     grid-row: 4;
   }
-  body.contact_body aside#form{
+  body.contact_body aside.form{
     grid-column: 2 / 6 ;
     grid-row: 3 ;
   }
