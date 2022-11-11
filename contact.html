@@ -4,13 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Space+Mono&display=swap" rel="stylesheet">
 	<link rel="icon" href="./image/favicon.ico.jpg">
 	<link rel="stylesheet" href="./css/html5reset.css">
 	<link rel="stylesheet" href="./css/styles.css">
 	<title>Contact</title>
+    <script src="https://kit.fontawesome.com/2b8970ebd8.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="contact_body">
 	<header>
 		<nav>
 			<a   href="./index.html">Home</a>
@@ -23,33 +27,54 @@
 	<main>
         <div class="contact">
             <img src="image/contact_me.jpg" alt="Me and My best friends">
-            <h1>Please contact with me anytime, I would like to connect with you <br><br><br>As I mentioned early, I love playing video games in my spare time, you can even connect with me to play video games together.</h1>
+            <h1>Please contact with me anytime, I would like to connect with you !<br><br>
+                You can contact me for some computer vision or machine learning projects cooperation. I am also interested in robots Projects,
+                I have taken the courses like mobile robots; self-driving cars, perception and control, machine learning, Foundation of computer vision.
+                Besides computer vision and robots field, I want to strengthen my skills in web design field. I have taken some courses related to the 
+                backend. For instance, Flask and django frame. I also learned some front end frames like react. Feel free to contact me if 
+                there are any opportunites that I can use my learned skills. 
+                
+            </h1>
+            <h1>
+                As I mentioned early, I love playing video games in my spare time, you can connect with me to play video games together. I am a good game parter.
+                I not only play games well but I also have a good temper. I hardly get angry because game lose. Although I love playing video games, I don't want 
+                to play games alone. I want to play as a important role in the team and have the feeling of coopertion with my teammates. I don't like bad-tempered teammates.
+                Game is not life, but a relaxing way.
+            </h1>
+
+            <h1>
+                If you want to connect with me, please fill in the form  about your information. I also listed my social media below, you 
+                can find me in either ways.
+            </h1>
             
         </div>
        
         
-        <form action="" method="post">
-            <div class="contact">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Please enter your first name" required><br>
+
+
+	</main>
+    <aside class="form">
+        <form action="https://formspree.io/f/mzbwkyve" method="post">
+            <div class="form">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Please enter your first name" required>
                 <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" placeholder="Please enter your last name" required><br>
+                <input type="text" id="lname" name="lname" placeholder="Please enter your last name" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+                <input type="email" id="email" name="email" placeholder="jiahang@gmail.com" required>
                 <label for="sub">Subject:</label>
-                <input type="text" id="sub" name="sub" required><br>
-                <label for="add">additional info:</label>
+                <input type="text" id="sub" name="sub" required>
+                <label for="add">Additional info:</label>
                 <input type="text" id="add" name="add" placeholder="Any additional information you want to add" ><br>
                 <button type="submit">Submit</button>
             </div>
         </form>
-
-        <h1>My social media</h1>
-        <a href="https://github.com/JiahangLiGary">Github</a>
-        <a href="https://www.linkedin.com/in/jiahang-li-a34994228/">LinkedIn</a>
-
-	</main>
-
+    </aside>
+    <aside class = "media">
+        <a href="https://www.facebook.com/profile.php?id=100073346439213"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/JiahangLiGary"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jiahang-li-a34994228/"><i class="fa-brands fa-linkedin"></i></a>
+    </aside>
 	<footer>
 		<p>
 			Jiahang Li's website  © 2022

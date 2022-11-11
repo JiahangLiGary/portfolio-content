@@ -1,7 +1,7 @@
 * {
-  padding: none;
-  margin: none;
-  font-family: 'Times New Roman';
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto','Times New Roman';
 }
 
 a{
@@ -31,7 +31,6 @@ nav {
   justify-content: space-around;
   align-content: center;
   background: linear-gradient(90deg, #d67de2, #6ec8e4); 
-  
 }
 
 
@@ -50,7 +49,233 @@ nav a:hover{
 }
 
 
+.target1, .target2, .target3, .target4{
+  color: red;
+  padding: auto;
+  text-decoration: underline;
+}
 
+/* img hover */
+ img.main_page:hover{
+  padding: 2px;
+  margin-top: 0;
+  margin-left: 2vw;
+  border: 2px solid yellow;
+  width: 50vw;
+  height: 75vh;
+
+}
+
+div.container img:hover{
+  padding: 1px;
+  margin:2px;
+  border: 2px solid yellow;
+  width: 100%;
+}
+
+main.project{
+  padding: auto;
+  margin: auto;
+  border: 0;
+}
+
+div.contact img:hover{
+  width: 60vw;
+  margin:0 2vw 3vh 8vw ;
+  padding: 2px;
+  border: 1px hotpink groove;
+}
+
+/* backgroundimage */
+div.container{
+  background-image: url("../image/background_img.png") ;
+  background-position: center; /* Center the image */
+  background-size: cover;
+}
+
+/* fontawesome icon */
+.fa-brands{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* contact part form */
+
+div.contact{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+div.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("../image/green.png") ;
+  background-position: center; /* Center the image */
+  background-size: cover;
+}
+
+aside.media{
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content:space-around;
+}
+
+div.form label{
+  font-size: 1rem;
+  font-family: Roboto;
+  margin-bottom: 0.3rem;
+}
+
+div.form input{
+  font-size: 1rem;
+  font-family: Roboto;
+  margin-bottom: 1rem;
+  background-color: aquamarine;
+  padding: 0.25rem;
+}
+
+div.form button{
+  background-color: aqua;
+  padding: 0.25rem;
+  width: 5rem;
+  border-radius: 1rem;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity:0;
+      transform: scale(1);
+  }
+  100% {
+      opacity:1;
+      transform: scale(1.05);
+  }
+  }
+
+
+div.contact img { 
+  animation: fadeIn ease infinite 3s;
+}
+
+img.inter{
+  width: 80vw; 
+  margin: 0 10vw;
+}
+img.inter:hover{
+  transform:scale(1.2);
+}
+
+@media (prefers-reduced-motion) {
+    div.contact img { 
+      animation:  none ;
+    }
+  }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  img{
+    border:0.25rem solid aqua;
+    padding: auto;
+  }
+  /* css for index page */
+  main.index{
+    background-image: url("../image/pink.png") ;
+    background-position: center; /* Center the image */
+    background-size: contain;
+  }
+  main.index img.main_page{
+    display: none;
+  }
+  main.index h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  main.index p{
+    margin-bottom: 2rem;
+  }
+/* css stlyle for contact page */
+  body.contact_body {
+    row-gap: 2vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,1fr);
+
+  }
+  body.contact_body header{
+    grid-column: 1 / -1 ;
+    grid-row: 1 ;
+    width: 100vw;
+  }
+  body.contact_body main{
+    grid-column: 1 / -1 ;
+    grid-row: 2 ;
+   
+  }
+  body.contact_body aside.media{
+    grid-column: 2 / 6 ;
+    grid-row: 4;
+  }
+  body.contact_body aside.form{
+    grid-column: 2 / 6 ;
+    grid-row: 3 ;
+  }
+  body.contact_body footer{
+    grid-column: 1 / -1 ;
+    grid-row: 5;
+  }
+
+  /* css for photos page */ 
+  h1.photos{
+    margin-top: 2rem;
+  }
+  div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    align-items: center;
+    margin-top: 2rem;
+  }
+  div.container figure{
+    margin-bottom: 2rem;
+  }
+  /* style for projects */
+  main.project div{
+    margin-bottom: 2rem;
+  }
+  main.project h1, p{
+    line-height: 2;
+  }
+  main.project img{
+    width: 90vw;
+  }
+  div.project1 img{
+    margin:0 2vw 2vh 2vw;
+    padding: 2px;
+    border: 2px;
+    height: 60vh;
+  }
+  div.project2 img{
+    height: 40vh;
+  }
+  div.project3 img{
+    height: 40vh;
+  }
+  /* project img hover */
+  main.project img:hover{
+    transform: scale(1.2); 
+    margin-left: 10vw;
+  }
+}
+
+
+
+@media only screen and (min-width: 769px) {
+/* 
+css for index page */
+img.inter{
+  display: none;
+}
 div.main_page{
   margin-top: 10vh;
   display: flex;
@@ -75,12 +300,6 @@ img.main_page{
   border: 0.5px rgb(0, 229, 255) solid;
   padding: 1px;
 }
-
-.target1, .target2, .target3, .target4{
-  color: red;
-  padding: auto;
-  text-decoration: underline;
-}
 /* 
 css for photos page */
 .container{
@@ -89,7 +308,7 @@ css for photos page */
   justify-content: center;  
 }
 
-p.photos{
+h1.photos{
   font-size: large;
   margin:3%;
 }
@@ -109,7 +328,6 @@ div.container img{
   border: 0.05px groove blue;
   width: 80%;
 }
-
 /* project css */
 div.project1, div.project3 {
   display: flex;
@@ -197,33 +415,14 @@ div.contact img{
   padding: 2px;
   border: 1px red solid;
 }
-/* img hover */
-div.main_page img:hover{
-  padding: 2px;
-  margin-top: 0;
-  margin-left: 2vw;
-  border: 2px solid yellow;
-  width: 50vw;
-  height: 75vh;
 
-}
-
-div.container img:hover{
-  padding: 1px;
-  margin:2px;
-  border: 2px solid yellow;
-  width: 100%;
-}
-
+/* project img hover */
 .project1 img:hover{
   position: absolute;
   right:10vw;
   z-index: 1;
   width:80vw ;
   height: 110vh;
-  padding: auto;
-  margin: auto;
-  border: 0;
 }
 
 .project2 img:hover{
@@ -232,9 +431,6 @@ div.container img:hover{
   height: 60vh;
   position: absolute;
   right:25vw;
-  padding: auto;
-  margin: auto;
-  border: 0;
 }
 
 .project3 img:hover{
@@ -243,14 +439,9 @@ div.container img:hover{
   height: 50vh;
   position: absolute;
   right:25vw;
-  padding: auto;
-  margin: auto;
-  border: 0;
 }
 
-div.contact img:hover{
-  width: 60vw;
-  margin:0 2vw 3vh 8vw ;
-  padding: 2px;
-  border: 1px hotpink groove;
 }
+
+
+
