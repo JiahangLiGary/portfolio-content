@@ -79,12 +79,7 @@ main.project{
   border: 0;
 }
 
-div.contact img:hover{
-  width: 60vw;
-  margin:0 2vw 3vh 8vw ;
-  padding: 2px;
-  border: 1px hotpink groove;
-}
+
 
 /* backgroundimage */
 div.container{
@@ -224,7 +219,10 @@ img.inter:hover{
     grid-column: 1 / -1 ;
     grid-row: 5;
   }
-
+  div.contact img{
+    width: 100vw;
+    height: 50vh;
+  }
   /* css for photos page */ 
   h1.photos{
     margin-top: 2rem;
@@ -253,13 +251,13 @@ img.inter:hover{
     margin:0 2vw 2vh 2vw;
     padding: 2px;
     border: 2px;
-    height: 60vh;
+    height: 50vh;
   }
   div.project2 img{
-    height: 40vh;
+    height: 37vh;
   }
   div.project3 img{
-    height: 40vh;
+    height: 37vh;
   }
   /* project img hover */
   main.project img:hover{
@@ -416,6 +414,12 @@ div.contact img{
   border: 1px red solid;
 }
 
+div.contact img:hover{
+  width: 60vw;
+  margin:0 2vw 3vh 8vw ;
+  padding: 2px;
+  border: 1px hotpink groove;
+}
 /* project img hover */
 .project1 img:hover{
   position: absolute;
