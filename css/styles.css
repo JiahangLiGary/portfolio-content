@@ -51,7 +51,6 @@ nav a:hover{
 
 .target1, .target2, .target3, .target4{
   color: red;
-  padding: auto;
   text-decoration: underline;
 }
 
@@ -71,12 +70,6 @@ div.container img:hover{
   margin:2px;
   border: 2px solid yellow;
   width: 100%;
-}
-
-main.project{
-  padding: auto;
-  margin: auto;
-  border: 0;
 }
 
 
@@ -170,7 +163,6 @@ img.inter:hover{
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   img{
     border:0.25rem solid aqua;
-    padding: auto;
   }
   /* css for index page */
   main.index{
