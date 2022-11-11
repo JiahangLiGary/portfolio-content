@@ -194,7 +194,7 @@ img.inter:hover{
     grid-row: 1 ;
     width: 100vw;
   }
-  body.contact_body main{
+  body.contact_body div.main_page{
     grid-column: 1 / -1 ;
     grid-row: 2 ;
    
@@ -204,6 +204,7 @@ img.inter:hover{
     grid-row: 4;
   }
   body.contact_body aside.form{
+    margin-top: 1.5rem;
     grid-column: 2 / 6 ;
     grid-row: 3 ;
   }
