@@ -128,6 +128,7 @@ div.form button{
   padding: 0.25rem;
   width: 5rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
@@ -154,13 +155,60 @@ img.inter:hover{
   transform:scale(1.2);
 }
 
+/* skip */
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+div.music_play{
+  margin-left: 35vw;
+  margin-top: 4vh;
+  width: 30vw;
+  height:35vh;
+  background-image: url("../image/ff14.png");
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.control_bar{
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+button#play, button#pause, button#switch{
+  border-radius: 0.6rem;
+  background-color: rgb(246, 92, 92);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+p#song_name{
+  font-size: 1.5rem;
+}
 @media (prefers-reduced-motion) {
     div.contact img { 
       animation:  none ;
     }
   }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+@media only screen and (min-width: 320px) and (max-width: 819px) {
   img{
     border:0.25rem solid aqua;
   }
@@ -194,7 +242,7 @@ img.inter:hover{
     grid-row: 1 ;
     width: 100vw;
   }
-  body.contact_body div.main_page{
+  body.contact_body div.contact{
     grid-column: 1 / -1 ;
     grid-row: 2 ;
    
@@ -257,11 +305,184 @@ img.inter:hover{
     transform: scale(1.2); 
     margin-left: 10vw;
   }
+  .project1 img:hover{
+    margin-top: 10vw;
+  }
+/* nav */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    background: #272725; 
+  }
+  header {
+    height: 28vh;
+  }
+  div.music_play{
+    display: none;
+  }
 }
 
 
+@media only screen and (min-width: 819px) and (max-width: 1200px) {
+  img{
+    border:0.25rem solid aqua;
+  }
+  /* css for index page */
+  main.index{
+    background-image: url("../image/pink.png") ;
+    background-position: center; /* Center the image */
+    background-size: contain;
+  }
+  main.index img.main_page{
+    display: none;
+  }
+  main.index h1{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  main.index p{
+    margin-bottom: 2rem;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    line-height: 2;
+  }
 
-@media only screen and (min-width: 769px) {
+  main.index p.i_2{
+    margin-bottom: 4.6vh;
+  }
+
+  /* css for photos page */ 
+  h1.photos{
+    margin-top: 2rem;
+  }
+  div.container{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  div.container figure{
+    margin-bottom: 2.5rem;
+  }
+/* css for projects */
+  /* style for projects */
+  main.project div{
+    margin-bottom: 2rem;
+  }
+  main.project h1, p{
+    line-height: 2;
+  }
+  main.project img{
+    width: 90vw;
+  }
+  div.project1 img{
+    height: 65vh;
+  }
+  div.project2 img{
+    width: 45vw;
+    height: 25vh;
+  }
+  div.project3 img{
+    height: 50vh;
+  }
+  div.project1, div.project3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.project1 h1{
+    margin-left: 15vw;
+    margin-top: 3vh;
+  }
+  div.project2 div.pr2_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5vh;
+  }
+  div.project2 h1{
+    margin-left: 28vw;
+  }
+  div.project3 h1{
+    margin-left: 26vw;
+    margin-top: 5vh;
+  }
+  /* project img hover */
+  main.project img:hover{
+    transform: scale(1.2); 
+    margin-left: 10vw;
+  }
+  .project1 img:hover{
+    margin-top: 10vw;
+  }
+/* contact css */
+
+/* css stlyle for contact page */
+div.contact img{
+  width: 40vw;
+}
+
+main#cont{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(6,26vh);
+}
+
+body.contact_body div.contact{
+  margin-top: 5vh;
+  margin-left: 10vw;
+  grid-column: 1 / -1 ;
+  grid-row: 1 / 4 ;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(7,10vh);
+}
+
+body.contact_body aside.form{
+  margin-top: 0;
+  grid-column: 2 / 6 ;
+  grid-row: 4 / 6 ;
+}
+
+body.contact_body section.media{
+  grid-column: 2 / 6 ;
+  grid-row: 6;
+  margin-top: -2vh;
+}
+
+div.contact img {
+  grid-column: 1 / 4 ;
+  grid-row: 1 / 4;
+}
+
+div.contact h1.p1{
+  grid-column: 4 / -1 ;
+  grid-row: 1 / 4;
+}
+
+div.contact h1.p2{
+  grid-column: 2 / 6 ;
+  grid-row: 4 / 6;
+  z-index: 1;
+  background: url("../image/light_blue.png");
+  background-size: contain;
+  line-height: 1.5;
+}
+
+div.contact h1.p3{
+  grid-column: 1 / -1 ;
+  grid-row: 6 / -1;
+
+}
+
+div.music_play{
+  display: none;
+}
+}
+
+
+@media only screen and (min-width: 1200px) {
 /* 
 css for index page */
 img.inter{
@@ -269,6 +490,7 @@ img.inter{
 }
 div.main_page{
   margin-top: 10vh;
+  margin-bottom: 10vh;
   display: flex;
 }
 
@@ -279,15 +501,16 @@ div.main_page div{
 div.main_page h1 {
   font-weight: bold;
   font-size: 45px;
-  margin:2vh 0 3vh 0;
+  margin: -5vh 0 3vh 0;
 }
 div.main_page p{
   line-height: 150%;
+  margin-bottom: 20px;
 }
 img.main_page{
   width: 40vw;
   height:60vh;
-  margin: 0 0 0 4rem;
+  margin: 1.2rem 0 0 4rem;
   border: 0.5px rgb(0, 229, 255) solid;
   padding: 1px;
 }
@@ -300,7 +523,6 @@ css for photos page */
 }
 
 h1.photos{
-  font-size: large;
   margin:3%;
 }
 
@@ -375,12 +597,17 @@ div.project2 div.pr2_text{
   align-items: center;
 }
 
+div.project3{
+  justify-content: flex-start;
+}
+
 div.project3 img{
-  height:50% ;
-  width:80%;
+  height:50vh ;
+  width:70vw;
   padding: 2px;
   border: 2px;
-
+  margin-right: 4vw;
+  margin-left: 4vw;
 }
 div.project3 div{
   margin-right: 2vw;
@@ -388,38 +615,71 @@ div.project3 div{
 }
 div.project3 h1{
   font-weight: bold;
-  margin-top: 3vh;
   margin-bottom: 6vh;
   font-size: 24px;
-  margin:0 0 2vh 0;
+  margin:-5vh 0 2vh 0;
 }
 
 /* contact css */
 
-div.contact{
-  display: flex;
-  margin-top: 3vh;
-}
+/* css stlyle for contact page */
+
 div.contact img{
-  width: 50vw;
-  margin:0 2vw 3vh 4vw ;
-  padding: 2px;
-  border: 1px red solid;
+  width: 40vw;
 }
 
-div.contact img:hover{
-  width: 60vw;
-  margin:0 2vw 3vh 8vw ;
-  padding: 2px;
-  border: 1px hotpink groove;
+main#cont{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(6,28vh);
 }
+
+body.contact_body div.contact{
+  margin-top: 5vh;
+  margin-left: 6vw;
+  grid-column: 1 / -1 ;
+  grid-row: 1 / 4 ;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(6,15vh);
+}
+
+body.contact_body aside.form{
+  margin-top: 0;
+  grid-column: 2 / 6 ;
+  grid-row: 4 / 6 ;
+}
+
+body.contact_body section.media{
+  grid-column: 2 / 6 ;
+  grid-row: 6;
+}
+
+div.contact img {
+  grid-column: 1 / 4 ;
+  grid-row: 1 / 4;
+}
+
+div.contact h1.p1{
+  grid-column: 4 / 6 ;
+  grid-row: 1 / 3;
+}
+
+div.contact h1.p2{
+  grid-column: 4 / 6 ;
+  grid-row: 3 / 5;
+}
+
+div.contact h1.p3{
+  grid-column: 1 / -1 ;
+  grid-row: 5 / 6;
+}
+
 /* project img hover */
 .project1 img:hover{
-  position: absolute;
-  right:10vw;
-  z-index: 1;
-  width:80vw ;
-  height: 110vh;
+  transform: scale(1.1);
+  margin-top: 2.5vh;
+  margin-left: 20vw;
 }
 
 .project2 img:hover{
@@ -429,13 +689,9 @@ div.contact img:hover{
   position: absolute;
   right:25vw;
 }
-
 .project3 img:hover{
-  z-index: 1;
-  width:50vw ;
-  height: 50vh;
-  position: absolute;
-  right:25vw;
+  transform: scale(1.1);
+  margin-left: 10vw;
 }
 
 }
